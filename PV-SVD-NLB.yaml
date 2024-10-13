@@ -15,6 +15,7 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-target-group-attributes: preserve_client_ip.enabled=true
     service.beta.kubernetes.io/aws-load-balancer-type: external
     service.beta.kubernetes.io/load-balancer-source-ranges: 0.0.0.0/0
+    external-dns.alpha.kubernetes.io/hostname: svd.dev.ciam.apps.svam.nonprod.pvcombank.io
 spec:
   type: LoadBalancer # Regular k8s Service manifest with type as LoadBalancer
   selector:
